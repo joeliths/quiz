@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Quiz</title>
+<link href="quiz.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="quizContainer" class="container">
+    <div class="title">Quiz</div>
+    <div id="question" class="question"></div>
+    <label class="option"><input type="radio" name="option" value="1"/><span id="opt1"></span></label>
+    <label class="option"><input type="radio" name="option" value="2"/><span id="opt2"></span></label>
+    <label class="option"><input type="radio" name="option" value="3"/><span id="opt3"></span></label>
+    <label class="option"><input type="radio" name="option" value="4"/><span id="opt4"></span></label>
+    <button id="nextButton" class="next-btn" onClick="nextQuestion();">Next Question</button>
+    <button id="nextButt1on" class="next-btn" onClick="document.location.reload()">Start over</button>
+    <progress id="progress" max="10" ></progress>
+
+
+  <!-- Modal for result -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Quiz Result</h2>
+    </div>
+    <div  class="modal-body">
+      <p id="modal-body"></p>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+
+</div>
+  <script src="question.js"></script>
+
+</body>
+</html>
